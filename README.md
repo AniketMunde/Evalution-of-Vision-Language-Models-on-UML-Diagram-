@@ -1,6 +1,4 @@
-Here’s a README for your "Evaluation of Vision Language Models on UML Diagrams" project, based on the research and benchmarking of models such as Kosmos-2, LLAVA 1.6, and Qwen-2.
 
----
 
 # Evaluation of Vision Language Models on UML Diagrams
 
@@ -91,6 +89,6 @@ Each notebook includes experiments designed to test the model's ability to ident
 - **Library Compatibility Issues**: Use the recommended versions of libraries to avoid compatibility issues.
 - **Data Loading Issues**: Ensure UML diagrams are correctly formatted and accessible from the notebooks.
 
----
 
-This README provides a comprehensive overview for your ongoing research on Vision Language Models for UML diagram interpretation. Let me know if you need further customization!
+
+
