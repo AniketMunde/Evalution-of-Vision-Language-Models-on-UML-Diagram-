@@ -189,9 +189,5 @@ The evaluation uses a customized Chain-of-Thought (CoT) prompting mechanism guid
 
 This project is licensed under the MIT License.
 
----
 
-## **References**
-
-Refer to the attached research paper for detailed citations and supporting material.
 
