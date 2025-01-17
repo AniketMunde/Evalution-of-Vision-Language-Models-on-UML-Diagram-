@@ -1,5 +1,5 @@
 Looking in indexes: https://nexus.iisys.de/repository/ki-awz-pypi-group/simple, https://pypi.org/simple
-Requirement already satisfied: accelerate in /opt/conda/lib/python3.10/site-packages (1.2.0)
+Requirement already satisfied: accelerate in /opt/conda/lib/python3.10/site-packages (1.2.1)
 Requirement already satisfied: numpy<3.0.0,>=1.17 in /opt/conda/lib/python3.10/site-packages (from accelerate) (1.24.4)
 Requirement already satisfied: packaging>=20.0 in /opt/conda/lib/python3.10/site-packages (from accelerate) (23.1)
 Requirement already satisfied: psutil in /opt/conda/lib/python3.10/site-packages (from accelerate) (5.9.5)

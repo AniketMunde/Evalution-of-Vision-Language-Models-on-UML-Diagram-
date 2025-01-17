@@ -1,0 +1,202 @@
+[
+    {
+        "image": "datasett/datasetUML1.png",
+        "questions": [
+            "Which classes are present in the diagram?",
+            "How many entities are defined in the diagram?",
+            "What attributes are present in the 'Reservation' entity?",
+            "What is the cardinality relationship between the 'User' and 'Employee' entities?",
+            "Which entity handles 'airline inquiries'?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML2.png",
+        "questions": [
+            "Which classes are shown in the diagram?",
+            "What are the private methods of the 'ATM' class?",
+            "What is the cardinality relationship between the 'Customer' and 'Account' entities?",
+            "What attributes are defined in the 'ATM Transaction' entity?",
+            "What parameters must be passed to the method that processes ATM transactions, and what are their data types?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML3.png",
+        "questions": [
+            "List all the classes present in the diagram.",
+            "How are the 'Customer' and 'Account' classes connected (directly or indirectly)?",
+            "What attributes are shared between the 'ATM' and 'Bank' entities?",
+            "Which intermediate class establishes an indirect connection between the 'ATM' and 'Debit Card' entities?",
+            "What are the public methods of the 'Bank' class?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML4.png",
+        "questions": [
+            "Which classes represent car components in the diagram?",
+            "What private methods are present in the 'Gear Box' class?",
+            "What is the relationship between the 'Suspension' and 'Wheel' classes?",
+            "What attributes define the 'Tire' class?",
+            "How is the 'Car' entity linked to the 'Engine' entity (directly or via an intermediate class)?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML5.png",
+        "questions": [
+            "Which classes handle the management of 'Rooms' in this system?",
+            "How is the 'Inventory' entity connected to the 'Rooms' entity?",
+            "What attributes describe the 'Manager' entity?",
+            "How many direct relationships are present between the 'Guest' and 'Rooms' classes?",
+            "Which public methods are defined in the 'Receptionist' entity?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML6.png",
+        "questions": [
+            "What are the three main subsystems in this online shopping system?",
+            "Which component is responsible for handling user authentication?",
+            "What is the relationship between the 'Manage Orders' and 'Orders' components in the 'Accounting' subsystem?",
+            "How does the 'ProductSearch' component interact with the 'SearchEngine' component?",
+            "What subsystems are connected to 'Manage Orders' in the diagram?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML7.png",
+        "questions": [
+            "Which classes represent hospital staff?",
+            "How is the 'Operations Staff' entity linked to the 'Doctor' and 'Nurse' entities?",
+            "What attributes are specific to the 'Staff' class?",
+            "What is the cardinality of the relationship between the 'Department' and 'Staff' classes?",
+            "Which methods in the 'Hospital' class deal with assigning patients to doctors?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML8.png",
+        "questions": [
+            "List all classes related to 'Rooms' in this diagram.",
+            "What attributes are defined in the 'Inventory' entity?",
+            "Which intermediate class establishes an indirect relationship between 'Manager' and 'Chef'?",
+            "What is the cardinality of the 'Rooms' to 'Guest' relationship?",
+            "Which private methods are present in the 'Manager' entity?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML9.png",
+        "questions": [
+            "Which classes define the cataloging process in this system?",
+            "How is the 'Books' entity connected to the 'Catalog' entity (directly or via an intermediate entity)?",
+            "What are the attributes of the 'Librarian' entity?",
+            "How is the 'Alert' entity related to the 'Member' entity?",
+            "What public methods are available in the 'Books' class?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML10.png",
+        "questions": [
+            "List all vehicle-related classes in this diagram.",
+            "What parameters are required for the method that connects the 'Driver' and 'Car' classes, and what are their data types?",
+            "Which intermediate class links the 'Car' and 'Ship' entities?",
+            "What attributes are defined in the 'Human' class?",
+            "How is the 'Vehicle' interface implemented in the 'Car' and 'Ship' classes?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML11.png",
+        "questions": [
+            "Which classes are present in the diagram?",
+            "What are the attributes of the 'Product' entity?",
+            "How is the 'Order' entity connected to the 'Line Item' entity (directly or indirectly)?",
+            "What is the cardinality relationship between 'Web User' and 'Customer' entities?",
+            "What private methods are defined in the 'Login Information' entity?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML12.png",
+        "questions": [
+            "Which classes manage user registration in this system?",
+            "What are the attributes of the 'Registration Information' entity?",
+            "How is the 'Login Information' entity connected to the 'Login Details' entity?",
+            "What methods are defined to establish a relationship between the 'User Type' and 'User' entities?",
+            "What is the relationship between the 'Department' and 'User' classes?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML13.png",
+        "questions": [
+            "Which classes are involved in the management of 'Departments'?",
+            "What are the attributes of the 'SessionManager' entity?",
+            "How is the 'Addressable' class related to the 'Department' class?",
+            "What is the cardinality of the relationship between 'User' and 'Customer'?",
+            "What public methods are available in the 'Product' class?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML14.png",
+        "questions": [
+            "What are the main actors involved in this system?",
+            "What is the relationship between the Product and Shopping Cart classes?",
+            "What are the primary use cases represented in this diagram?",
+            "How is the Order Confirmation class related to the Order class?",
+            "What are the classes representing shopping carts in this system?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML15.png",
+        "questions": [
+            "What is the first message sent by the Customer to the System?",
+            "Which actor sends the 'Payment verified' message?",
+            "How many messages are exchanged between the Customer and the System before the order is placed?",
+            "What is the last message sent by the System to the Customer?",
+            "If the payment verification fails, what is the likely next step in the sequence?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML16.png",
+        "questions": [
+            "What is the initial activity in this process?",
+            "How many decision nodes are present in the diagram?",
+            "What is the final activity in the process?",
+            "What is the immediate successor of the 'Product Search' activity?",
+            "If a user decides to 'Remove Product(s) from Shopping Cart' what is the subsequent activity?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML17.png",
+        "questions": [
+            "Which classes represent insurance claim processing in this diagram?",
+            "How are the 'Person' and 'Address' classes related?",
+            "What attributes are defined in the 'Policy' class?",
+            "What intermediate class establishes a relationship between 'Customer File' and 'Assessment Report'?",
+            "What methods are defined in the 'Insurance Claim' class for linking claims to policies?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML18.png",
+        "questions": [
+            "Which private classes are present in this diagram?",
+            "How are the public classes related to one another?",
+            "What happens if the 'Account' class is private, and how does it affect the 'Contacts' and 'Activities' classes?",
+            "What are the implications of making the 'Opportunity' class private?",
+            "How does encapsulation improve the security of this system through the use of private classes?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML19.png",
+        "questions": [
+            "Which classes are public in this diagram?",
+            "How is the 'Librarian' class related to the 'User' and 'Transaction' classes?",
+            "What attributes are present in the 'Books' class?",
+            "What happens if the 'Books' class is private?",
+            "What methods are defined for managing the connection between 'User' and 'Transaction' classes?"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML20.png",
+        "questions": [
+            "Which classes represent network components in this system?",
+            "How is the 'TrafficStream' entity connected to the 'Node' entity?",
+            "What attributes are defined in the 'Links' entity?",
+            "What intermediate class establishes an indirect relationship between 'Network' and 'Links'?",
+            "What methods are available in the 'TrafficStream' class for managing connections to 'Node'?"
+        ]
+    }
+]

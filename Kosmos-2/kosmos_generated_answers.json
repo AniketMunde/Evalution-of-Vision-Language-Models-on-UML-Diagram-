@@ -1,0 +1,614 @@
+[
+    {
+        "image": "datasett/datasetUML1.png",
+        "questions": [
+            "Which classes are present in the diagram?",
+            "How many entities are defined in the diagram?",
+            "What attributes are present in the 'Reservation' entity?",
+            "What is the cardinality relationship between the 'User' and 'Employee' entities?",
+            "Which entity handles 'airline inquiries'?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes are present in the diagram? The diagram shows a class diagram for an airline registration system.",
+            "How many entities are defined in the diagram? There are six entities defined in this diagram.",
+            "What attributes are present in the 'Reservation' entity? In the 'Airline Registration System' entity, there are several attributes present. These attributes include 'Airlines', 'Registration', and 'Airports'.",
+            "What is the cardinality relationship between the 'User' and 'Employee' entities? The cardinality relationships between the \"User\" and \"Employ\" entities in the airline registration system are as follows: \"User:\" \"Empleoyee:\"",
+            "Which entity handles 'airline inquiries'? The entity handling 'airlines inquiries' is the airline registration system."
+        ],
+        "ground_truth_answer": [
+            [
+                "User",
+                "Employee",
+                "Passenger",
+                "Airline Enquiry",
+                "Airline",
+                "Role",
+                "Permission",
+                "Reservation"
+            ],
+            8,
+            "The 'Reservation' entity has the following attributes: reservation_id (integer, a unique identifier), reservation_description (string, describes the reservation), reservation_type (string, specifies the type), reservation_date (date, stores the reservation date), and reservation_password_id (integer, a secure password reference).",
+            "The cardinality between 'User' and 'Employee' is 1-to-many, meaning a single User can have multiple Employees associated, but each Employee is tied to only one User.",
+            "The entity that specifically manages 'airline inquiries' is the 'Airline Enquiry' class, which contains attributes such as airline enquiry_id, airline enquiry_type, title, description, and date. It also includes methods for adding, editing, deleting, and searching inquiries."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML2.png",
+        "questions": [
+            "Which classes are shown in the diagram?",
+            "What are the private methods of the 'ATM' class?",
+            "What is the cardinality relationship between the 'Customer' and 'Account' entities?",
+            "What attributes are defined in the 'ATM Transaction' entity?",
+            "What parameters must be passed to the method that processes ATM transactions, and what are their data types?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes are shown in the diagram? The diagram shows a class diagram for an ATM system.",
+            "What are the private methods of the 'ATM' class? The private methods in the 'ATOM' class are'send','receive', and 'cancel'.",
+            "What is the cardinality relationship between the 'Customer' and 'Account' entities? The cardinality relationships between the Customer and Account entities are as follows: 1. Customer: The Customer is the primary entity in the system. 2. Account: The Account entity is the secondary entity in this system. 3. Transaction: The Transaction entity is a third entity in relation to the Customer, and it is responsible for processing the transaction.",
+            "What attributes are defined in the 'ATM Transaction' entity? The 'ATP Transaction' entities in the diagram are defined as 'Amounts', 'Transactions' and 'Transfers'.",
+            "What parameters must be passed to the method that processes ATM transactions, and what are their data types? To process ATM transactions in the ATM system, the method must pass parameters such as the transaction type, the amount, and the card number. The transaction type can be either a cash withdrawal or a credit card transaction. The amount can be set to the amount of the transaction, and it can be a fixed amount or a variable amount. The card number is a unique identifier for each transaction."
+        ],
+        "ground_truth_answer": [
+            [
+                "ATM",
+                "Bank",
+                "Customer",
+                "Saving Account",
+                "Checking Account",
+                "Debit Card",
+                "ATM Transaction"
+            ],
+            "Not explicitly shown in the diagram; details regarding private methods are absent.",
+            "The cardinality is 1-to-many: a single Customer can be associated with multiple Accounts, but each Account is tied to a single Customer.",
+            "The 'ATM Transaction' entity has attributes like transaction_id (a unique identifier for the transaction), date (the date of the transaction), type (withdrawal, deposit, etc.), and amount (the monetary value involved).",
+            {
+                "account_number": "int",
+                "amount": "float"
+            }
+        ]
+    },
+    {
+        "image": "datasett/datasetUML3.png",
+        "questions": [
+            "List all the classes present in the diagram.",
+            "How are the 'Customer' and 'Account' classes connected (directly or indirectly)?",
+            "What attributes are shared between the 'ATM' and 'Bank' entities?",
+            "Which intermediate class establishes an indirect connection between the 'ATM' and 'Debit Card' entities?",
+            "What are the public methods of the 'Bank' class?"
+        ],
+        "generated_answer_kosmos": [
+            "List all the classes present in the diagram. The banking system has four classes: depository, branch, and ATM.",
+            "How are the 'Customer' and 'Account' classes connected (directly or indirectly)? The 'Custom' class is connected to the 'Accounts' class through the 'User' class.",
+            "What attributes are shared between the 'ATM' and 'Bank' entities? The ATM and Bank entities share the following attributes: 1. ATM: A machine that dispenses cash or other financial services. 2. Bank: A financial institution that provides banking services to its customers. 3. Relationship between the two entities: The ATM is a financial institution, while the Bank is a business entity.",
+            "Which intermediate class establishes an indirect connection between the 'ATM' and 'Debit Card' entities? The ATM and debit card entities establish an indirect link between them.",
+            "What are the public methods of the 'Bank' class? The public methods in the 'banking system' class are 'open' and 'close'."
+        ],
+        "ground_truth_answer": [
+            [
+                "Bank",
+                "ATM",
+                "Customer",
+                "Saving Account",
+                "Checking Account",
+                "ATM Transactions"
+            ],
+            "The connection between 'Customer' and 'Account' classes is direct, through an association where each Customer owns one or more Accounts.",
+            "There are no explicitly shared attributes between the 'ATM' and 'Bank' entities in the diagram.",
+            "The 'Customer' class serves as an intermediary, linking the 'ATM' and 'Debit Card' entities through ownership relationships.",
+            [
+                "getAccounts"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML4.png",
+        "questions": [
+            "Which classes represent car components in the diagram?",
+            "What private methods are present in the 'Gear Box' class?",
+            "What is the relationship between the 'Suspension' and 'Wheel' classes?",
+            "What attributes define the 'Tire' class?",
+            "How is the 'Car' entity linked to the 'Engine' entity (directly or via an intermediate class)?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes represent car components in the diagram? In the diagram, the classes represent the car components.",
+            "What private methods are present in the 'Gear Box' class? The 'GEAR Box' classes present a private method called 'Car Modeling'.",
+            "What is the relationship between the 'Suspension' and 'Wheel' classes? The relationship between 'Suspense' and the 'Wheels' classes is that the 'Suspension,' 'Wheel,' and their respective 'Suspended' and `Unsuspensed' classes are all related to the 'Car Modeling' class.",
+            "What attributes define the 'Tire' class? The 'Tired' class is defined as a car model that has a tire attached to it.",
+            "How is the 'Car' entity linked to the 'Engine' entity (directly or via an intermediate class)? The 'Car,' 'Engine,' and 'Driver' entities are linked to each other via a class called 'Car.' This class is used to define the relationships between the entities in the diagram."
+        ],
+        "ground_truth_answer": [
+            [
+                "Engine",
+                "Suspension",
+                "Wheel",
+                "Tire",
+                "Gear Box",
+                "Brake"
+            ],
+            "Not explicitly shown in the diagram.",
+            "The 'Suspension' and 'Wheel' classes share an Aggregation relationship, indicating that a Suspension can have one or more Wheels associated with it.",
+            "The 'Tire' class includes attributes like width (float, the tire's width in units) and air_pressure (float, the current air pressure within the tire).",
+            "The 'Car' entity is directly linked to the 'Engine' entity."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML5.png",
+        "questions": [
+            "Which classes handle the management of 'Rooms' in this system?",
+            "How is the 'Inventory' entity connected to the 'Rooms' entity?",
+            "What attributes describe the 'Manager' entity?",
+            "How many direct relationships are present between the 'Guest' and 'Rooms' classes?",
+            "Which public methods are defined in the 'Receptionist' entity?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes handle the management of 'Rooms' in this system? In this system, the management is handled by the Rooms class.",
+            "How is the 'Inventory' entity connected to the 'Rooms' entity? The 'Inventors' entity is connected to 'Rows', 'Storage', and 'Rentals' entities in the 'Entity Diagram'.",
+            "What attributes describe the 'Manager' entity? The 'Manager entity' in the diagram represents a manager, who is responsible for managing the resources and tasks associated with the project.",
+            "How many direct relationships are present between the 'Guest' and 'Rooms' classes? There are two direct relationships between the Guest and Rooms classes.",
+            "Which public methods are defined in the 'Receptionist' entity? The 'Receiver' entity in the diagram is defined as a 'Response' entity."
+        ],
+        "ground_truth_answer": [
+            [
+                "Rooms",
+                "Manager",
+                "Receptionist"
+            ],
+            "The 'Inventory' entity is associated with the 'Rooms' entity, likely representing items or assets within the rooms.",
+            "Attributes of the 'Manager' entity include name (string, representing the manager's name) and phone_number (integer, representing the contact number).",
+            1,
+            [
+                "checkRoomAvailability",
+                "generateBill"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML6.png",
+        "questions": [
+            "What are the three main subsystems in this online shopping system?",
+            "Which component is responsible for handling user authentication?",
+            "What is the relationship between the 'Manage Orders' and 'Orders' components in the 'Accounting' subsystem?",
+            "How does the 'ProductSearch' component interact with the 'SearchEngine' component?",
+            "What subsystems are connected to 'Manage Orders' in the diagram?"
+        ],
+        "generated_answer_kosmos": [
+            "What are the three main subsystems in this online shopping system? The three main components in this shopping system are the product catalog, the customer service, and the sales and marketing. The product catalog is responsible for managing and organizing the products available for purchase. It contains information about the products, their prices, and their availability. The customer service is responsible to provide customer support and assistance to customers, including resolving issues, providing information, and resolving payment issues. The sales and market marketing subsystems are responsible for promoting and selling the products to customers. They work with the customer support team to ensure that the products are available and that customers are satisfied with the purchase.",
+            "Which component is responsible for handling user authentication? The component responsible for managing user authentication is the authentication service.",
+            "What is the relationship between the 'Manage Orders' and 'Orders' components in the 'Accounting' subsystem? In the 'Order's' subsystem, the 'Product' component is a sub-component of the 'Sales' component. The 'Production' component in the accounting subsystem is a component of the sales component.",
+            "How does the 'ProductSearch' component interact with the 'SearchEngine' component? The 'Productions' component of the 'SEO' application interacts with the \u2018SearchEngine\u2019 component through the 'Advertising' component. The 'Search' and 'Ads' components of the application are connected through the \u2018Advertisement' component, which is responsible for serving ads to users. The diagram shows that the'search' component is responsible to display ads to the users based on their search queries. The ads are displayed in the form of sponsored links, which are displayed on the 'ad' side of the page.",
+            "What subsystems are connected to 'Manage Orders' in the diagram? In the diagram, 'Managed Orders,' 'Orders,'and 'Order Processing' are connected."
+        ],
+        "ground_truth_answer": [
+            [
+                "WebStore",
+                "Warehouses",
+                "Accounts"
+            ],
+            "The 'Authentication' component within the WebStore subsystem is responsible for managing user authentication. It ensures secure login and session management for users accessing the online shopping system.",
+            "There is an association relationship between 'Manage Orders' and 'Orders', allowing 'Manage Orders' to process, update, or track information about the 'Orders'.",
+            "The 'ProductSearch' component interacts with the 'SearchEngine' component through aggregation, utilizing its functionality to perform and refine product searches for users.",
+            [
+                "WebStore",
+                "Accounts"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML7.png",
+        "questions": [
+            "Which classes represent hospital staff?",
+            "How is the 'Operations Staff' entity linked to the 'Doctor' and 'Nurse' entities?",
+            "What attributes are specific to the 'Staff' class?",
+            "What is the cardinality of the relationship between the 'Department' and 'Staff' classes?",
+            "Which methods in the 'Hospital' class deal with assigning patients to doctors?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes represent hospital staff?",
+            "How is the 'Operations Staff' entity linked to the 'Doctor' and 'Nurse' entities? The 'Operational Staff' entities are linked to each other through a hospital management structure. The 'Doctors' and the 'Nurses' entities have their own hospital management structures, which are linked through the 'Staff' entity. The hospital management system is designed to facilitate communication between the various staff members, ensuring that they are aware of each other's responsibilities and can effectively work together to provide the best care for patients.",
+            "What attributes are specific to the 'Staff' class? The 'Staff class' is specifically designed to manage the staff in a hospital. It includes the following attributes: 1. Staff: This class includes the staff members who work in the hospital, such as nurses, doctors, and other healthcare professionals. 2. Staff Roles: This group of staff members is responsible for providing services to patients, managing the workflow, and coordinating with other staff members. 3. Staff Relationships: This includes the relationships between staff members, such a their professional and personal relationships, and their roles within the hospital. 4. Staff Skills: This category includes the skills and abilities of the staff, such their knowledge of medical terminology, communication, and teamwork. 5. Staff Training: This section includes the training of staff to ensure they are proficient in their roles and responsibilities.",
+            "What is the cardinality of the relationship between the 'Department' and 'Staff' classes? The cardinality in the relationship among the 'Staff Class' and the 'Hospital Management Class' is two.",
+            "Which methods in the 'Hospital' class deal with assigning patients to doctors? In the 'hospital' class, there are several methods that deal with the assignment of patients to different doctors. These methods include: 1. Scheduling: The hospital staff schedules appointments for patients based on their medical condition, age, and other factors. 2. Appointments: The staff assigns patients to specific doctors based on the patient's medical condition and the doctor's availability. 3. Referrals: Staff members may refer patients to other doctors for further treatment or follow-up. 4. Referred: Staff may refer a patient to a doctor who is not in the hospital's network. 5. Refer to: Staff can refer a specific patient to another doctor for treatment or care. 6. Refer for: Staff or patients can be referred to a specialist or a hospital for further care or treatment. 7. Referral to: The patient can be assigned to a specific doctor based on his or her medical condition or the doctor who referred the patient. 8. Refer by: Staff, patients, or other professionals can be asked to refer a particular patient to the doctor they are assigned to."
+        ],
+        "ground_truth_answer": [
+            [
+                "Doctor",
+                "Nurse",
+                "Receptionist",
+                "Technician",
+                "Technologist"
+            ],
+            "The 'Operations Staff' entity is linked to the 'Doctor' and 'Nurse' entities through inheritance, as both Doctor and Nurse extend the Operations Staff class, indicating they share common attributes and behaviors.",
+            "The 'Staff' class includes the following specific attributes: name (string, representing the full name of the staff member), address (string, representing the residence address), phone (integer, the contact number), title (string, job title or role), and joined_date (date, the date of joining the hospital).",
+            "The cardinality is 1-to-many, meaning each 'Department' can have multiple 'Staff' members, but each 'Staff' belongs to a single 'Department'.",
+            "Not explicitly shown in the diagram."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML8.png",
+        "questions": [
+            "List all classes related to 'Rooms' in this diagram.",
+            "What attributes are defined in the 'Inventory' entity?",
+            "Which intermediate class establishes an indirect relationship between 'Manager' and 'Chef'?",
+            "What is the cardinality of the 'Rooms' to 'Guest' relationship?",
+            "Which private methods are present in the 'Manager' entity?"
+        ],
+        "generated_answer_kosmos": [
+            "List all classes related to 'Rooms' in this diagram.",
+            "What attributes are defined in the 'Inventory' entity? The 'Inventors' entity in the hotel management system is defined as a group of hoteliers who are responsible for managing the inventory of rooms and amenities in the hotels.",
+            "Which intermediate class establishes an indirect relationship between 'Manager' and 'Chef'? The intermediate class 'Chefer' establishes an indirect relationship between the 'Managers' and the 'Chefes'.",
+            "What is the cardinality of the 'Rooms' to 'Guest' relationship? The cardinality for the 'Guerreros' to the 'Hotel' relationship is two.",
+            "Which private methods are present in the 'Manager' entity? In the 'Hotel Management' entity, there are several private methods present. These methods include 'Manager,' 'Managers,' and 'Manager.'"
+        ],
+        "ground_truth_answer": [
+            [
+                "Rooms",
+                "Guest",
+                "Manager",
+                "Receptionist"
+            ],
+            "The 'Inventory' entity includes attributes such as id (unique identifier for the inventory), name (string, the name of the inventory item), type (string, the type/category of the item), and status (string, indicating the current state of the inventory item).",
+            "The 'Inventory' class serves as an intermediate, connecting 'Manager' and 'Chef', likely through management and usage of resources or items.",
+            "The relationship is 1-to-many, meaning a single 'Room' can be associated with multiple 'Guests' during different time periods.",
+            "Not explicitly shown in the diagram."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML9.png",
+        "questions": [
+            "Which classes define the cataloging process in this system?",
+            "How is the 'Books' entity connected to the 'Catalog' entity (directly or via an intermediate entity)?",
+            "What are the attributes of the 'Librarian' entity?",
+            "How is the 'Alert' entity related to the 'Member' entity?",
+            "What public methods are available in the 'Books' class?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes define the cataloging process in this system? In this system, the catalog process is defined by the library management.",
+            "How is the 'Books' entity connected to the 'Catalog' entity (directly or via an intermediate entity)? The 'Book' entity is connected to 'Citadel' via an intermediary entity.",
+            "What are the attributes of the 'Librarian' entity? The 'Librarian' entity is a library management system, which is a software application that manages the library's resources, such as books, periodicals, and other materials. It is responsible for cataloging, managing, and distributing the library materials to users. The library management software also provides users with access to resources, including online resources, reference materials, and online databases.",
+            "How is the 'Alert' entity related to the 'Member' entity? The 'Alarm' entity is related to 'Member,' which is a library management entity. The 'Member entity' is also related to a 'Library' entity, which is another library management element.",
+            "What public methods are available in the 'Books' class? The 'Book' class has a public method called 'add_to_cart'."
+        ],
+        "ground_truth_answer": [
+            [
+                "Catalog",
+                "Books",
+                "Librarian"
+            ],
+            "The 'Books' entity is directly connected to the 'Catalog' entity, allowing the catalog to manage and list books.",
+            "The 'Librarian' entity includes the following attributes: name (string, librarian's full name), address (string, residential or professional address), and mobile_number (integer, contact number).",
+            "The 'Alert' entity is related to the 'Member' entity via an association, enabling alerts such as notifications or fines to be linked to specific members.",
+            [
+                "addToCatalog",
+                "removeFromCatalog"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML10.png",
+        "questions": [
+            "List all vehicle-related classes in this diagram.",
+            "What parameters are required for the method that connects the 'Driver' and 'Car' classes, and what are their data types?",
+            "Which intermediate class links the 'Car' and 'Ship' entities?",
+            "What attributes are defined in the 'Human' class?",
+            "How is the 'Vehicle' interface implemented in the 'Car' and 'Ship' classes?"
+        ],
+        "generated_answer_kosmos": [
+            "List all vehicle-related classes in this diagram.",
+            "What parameters are required for the method that connects the 'Driver' and 'Car' classes, and what are their data types? To connect the 'Car-Hailing System' class to the 'Driving' class, the parameters required are the 'driver' and the 'car' classes. The data types for these classes are 'Drivers' and `Cars.' The 'Drive' class is a single object, while the 'CAR' class contains multiple objects. The 'Cars' class consists of a single car, and each car has a unique ID.",
+            "Which intermediate class links the 'Car' and 'Ship' entities? The intermediate class that links the car and ship entities is the 'Ship-Car' class.",
+            "What attributes are defined in the 'Human' class? The 'Human Car-Hailing System' class is defined as a system that allows users to control the car's behavior by using a smartphone app.",
+            "How is the 'Vehicle' interface implemented in the 'Car' and 'Ship' classes? In the 'Ship Class', the 'Vehicles' interface is implemented as a hierarchical structure, with each 'Ship Vehicle' class having its own 'Vest' and associated 'Ship Equipment'. In the case of the 'car' class, the interface is similar to the'ship' class."
+        ],
+        "ground_truth_answer": [
+            [
+                "Vehicle",
+                "Car",
+                "Ship",
+                "Bus"
+            ],
+            {
+                "car": "Car object",
+                "driver": "Driver object"
+            },
+            "The 'Vehicle' interface acts as the intermediate class linking 'Car' and 'Ship', allowing shared functionality and attributes through realization.",
+            "The 'Human' class defines attributes like head (object of class Head) and body (object of class Body), which represent human structural features.",
+            "The 'Vehicle' interface is implemented via realization in both 'Car' and 'Ship' classes, providing concrete definitions for vehicle-specific methods."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML11.png",
+        "questions": [
+            "Which classes are present in the diagram?",
+            "What are the attributes of the 'Product' entity?",
+            "How is the 'Order' entity connected to the 'Line Item' entity (directly or indirectly)?",
+            "What is the cardinality relationship between 'Web User' and 'Customer' entities?",
+            "What private methods are defined in the 'Login Information' entity?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes are present in the diagram? The diagram shows a shopping cart with several classes present.",
+            "What are the attributes of the 'Product' entity? The 'Production' entity in the diagram is a product, which is a type of entity that is used to describe a product in a business process. The attributes of this entity include: 1. Product name: This is the name of the product, typically a unique name that distinguishes it from other products. 2. Product description: This describes the product in detail, including its features, benefits, and any additional information that is relevant to the customer. 3. Product price: This indicates the price of the products, typically expressed in dollars or other currency. 4. Product availability: This shows the availability of the specific product in the market. 5. Product rating: This rating is a numerical value that indicates the quality of the particular product. 6. Product reviews: This feature allows customers to leave reviews about the product. 7. Product rating history: This allows the customer to see the history of the rating of the current product. 8. Product image: This image is a representation of the actual product, usually a photograph or a video. 9. Product category: This category is a grouping of related products that share similar characteristics. 10. Product categories: This grouping of products is used for product classification and product comparison. 11. Product attributes: This list of attributes describes the characteristics of the different products in the category. 12. Product features: This section describes the features of the various products in this category. 13. Product benefits: This subsection describes the benefits of the individual products in terms of customer satisfaction, productivity, and other aspects of the customer experience. 14. Product pricing: This price is expressed in terms other than dollars or euros. 15. Product shipping: This shipping cost is expressed as a percentage of the total cost of the purchase. 16. Product return policy: This policy details the return policy for the product and the steps that the customer must follow to return the product for a refund. 17. Product rating History: This information allows the user to see how the product has been rated in the past. 18. Product images: This represents the actual image of the item, usually in a photograph, video, or other form. 19. Product category history: The history of this category is represented by the history table. 20. Product ratings history: A history table shows the rating history of each product in this particular category.",
+            "How is the 'Order' entity connected to the 'Line Item' entity (directly or indirectly)? The 'Order Item Line Item Order' entity is connected to 'Line Items' through the 'Direct Item Link' entity. This means that the 'Link' entity can be used to link the 'Item' to the corresponding 'Line' item in the 'Shopping Cart'.",
+            "What is the cardinality relationship between 'Web User' and 'Customer' entities? The cardinality relationships between 'Customers' and the 'Web Users' are as follows: 1. Web User: The 'Custom User' entity is the person who is browsing the website and is interacting with the website. 2. Customer: The customer entity is a person who has made a purchase or is in the process of making a purchase. 3. Web User and Customer: These entities are the same entity, but the Web User is the one who is interacting directly with the customer and the Customer is the entity that is interacting indirectly with the Web Users.",
+            "What private methods are defined in the 'Login Information' entity? The 'Log In Information' element in the entity is defined as 'Log in information'."
+        ],
+        "ground_truth_answer": [
+            [
+                "Web User",
+                "Customer",
+                "Order",
+                "Line Item",
+                "Product",
+                "Login Information"
+            ],
+            "The 'Product' entity includes attributes such as product_id (a unique identifier for the product), product_name (the name of the product), product_description (detailed information about the product), and price (monetary cost of the product).",
+            "The 'Order' entity is directly connected to the 'Line Item' entity, indicating that each order can have multiple line items associated with it.",
+            "The cardinality relationship between 'Web User' and 'Customer' is 1-to-1, where each Web User corresponds to one Customer and vice versa.",
+            "The private methods in the 'Login Information' entity include 'validate' (used for checking the user's credentials) and 'authenticate' (for verifying login details)."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML12.png",
+        "questions": [
+            "Which classes manage user registration in this system?",
+            "What are the attributes of the 'Registration Information' entity?",
+            "How is the 'Login Information' entity connected to the 'Login Details' entity?",
+            "What methods are defined to establish a relationship between the 'User Type' and 'User' entities?",
+            "What is the relationship between the 'Department' and 'User' classes?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes manage user registration in this system? In this system, the classes manage the user registration process.",
+            "What are the attributes of the 'Registration Information' entity? The 'Registsration Information,' 'Login System,' and 'Logout System' entities in the diagram are the 'Log In,' the 'User,' or 'Log Out,' respectively.",
+            "How is the 'Login Information' entity connected to the 'Login Details' entity? The 'Log In Information' and 'Log Out Information' entities are connected by a data flow diagram. The 'Input' entity is connected to 'Logout', and the 'Output' is connected back to 'Init'.",
+            "What methods are defined to establish a relationship between the 'User Type' and 'User' entities? In the image, there are several methods defined to create a relationship among the 'user type' and the 'users' entities. These methods include: 1. User Type: This method is used to identify the user type, such as 'user1', 'user2', or 'user3'. 2. User Types: This is a list of user types, such a 'user', a 'group', and a 'person'. 3. User ID: This identifies the user ID of the user. 4. User Name: This specifies the user name of the person. 5. User Email: This indicates the user's email address. 6. User Password: This contains the user password for the user, which is typically used to log into the system. 7. User Role: This defines the user role, such an 'admin', an 'account', etc. 8. User Group: This group is a collection of users who share a common interest or activity. 9. User Roles: These are the user roles defined in the user types. 10. User Tags: This tag identifies the tags associated with the user in the system, such 'username', which identifies the username of the individual. 11. User Status: This status indicates whether the user is currently logged in or not. 12. User Activity: This includes the user activity, such the number of login attempts, the number and type of logins, and the number or type of sessions. 13. User Events: This list of events includes the events that occurred during the user session, such login attempts and logins. 14. User Logout: This event indicates the end of the session for the individual user.",
+            "What is the relationship between the 'Department' and 'User' classes? The relationship between 'Departments' and the 'Users' classes is that they are both classes that represent a group of users."
+        ],
+        "ground_truth_answer": [
+            [
+                "Registration Information",
+                "Login Information",
+                "User Type"
+            ],
+            "The 'Registration Information' entity includes attributes such as registration_id (unique identifier), name (the full name of the user), age (user's age), gender (gender of the user), and address (home address of the user).",
+            "The 'Login Information' entity is connected to the 'Login Details' entity through association, allowing the login details to be associated with a specific login session.",
+            "The 'User Type' and 'User' entities are connected through methods like 'create' (to create user accounts based on the user type) and 'update' (to modify user information).",
+            "The 'Department' and 'User' classes are related through an association, where each User belongs to one Department."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML13.png",
+        "questions": [
+            "Which classes are involved in the management of 'Departments'?",
+            "What are the attributes of the 'SessionManager' entity?",
+            "How is the 'Addressable' class related to the 'Department' class?",
+            "What is the cardinality of the relationship between 'User' and 'Customer'?",
+            "What public methods are available in the 'Product' class?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes are involved in the management of 'Departments'? In the image, there are three classes involved in managing 'Department': 'Administrators', 'Subordinates' and 'Department Head'. The administrators are responsible for managing the department's resources, such as personnel, budgets, and policies. The subordinates are responsible to perform specific tasks within the department, such a payroll, scheduling, and other administrative tasks. The department head is the person who is responsible for overseeing the department and its activities.",
+            "What are the attributes of the 'SessionManager' entity? The 'SsessionManager' is an entity that is part of the organization's database. It has the following attributes: 'Department', 'Departmental', and 'Department.'",
+            "How is the 'Addressable' class related to the 'Department' class? The 'Addressing' class is related to 'Department,' as it is a subclass of 'Administrator.' The 'Department.' class inherits from 'Administering,' which is a class that inherits the 'User' class.",
+            "What is the cardinality of the relationship between 'User' and 'Customer'? The cardinality between 'Customers' and \u2018Users\u2019 in the relationship diagram is 2.",
+            "What public methods are available in the 'Product' class? The 'Production' class has public methods available for the 'Order' and 'Department' classes."
+        ],
+        "ground_truth_answer": [
+            [
+                "Department",
+                "SessionManager",
+                "Customer",
+                "Administrator"
+            ],
+            "The 'SessionManager' entity includes attributes like session_id (unique identifier for a session), session_start_time (start time of the session), and session_end_time (end time of the session).",
+            "The 'Addressable' class is related to the 'Department' class via inheritance, allowing the Department to have address-related attributes.",
+            "The cardinality between 'User' and 'Customer' is 1-to-1, indicating each User corresponds to one Customer.",
+            [
+                "getProductDetails",
+                "updateProduct",
+                "deleteProduct"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML14.png",
+        "questions": [
+            "What are the main actors involved in this system?",
+            "What is the relationship between the Product and Shopping Cart classes?",
+            "What are the primary use cases represented in this diagram?",
+            "How is the Order Confirmation class related to the Order class?",
+            "What are the classes representing shopping carts in this system?"
+        ],
+        "generated_answer_kosmos": [
+            "What are the main actors involved in this system? The main actors in this diagram are the users, the system administrator, and the system. The users are the people who interact with the system, such as the users who create new accounts, log in, and manage their accounts. The system administrator is responsible for managing the system and ensuring its functionality. The user interface is represented by the boxes, which are the components of the system that users interact with.",
+            "What is the relationship between the Product and Shopping Cart classes? The relationship between Product and shopping cart classes is that they both have a single parent class.",
+            "What are the primary use cases represented in this diagram? The primary use case represented in the diagram is a workflow for managing a project.",
+            "How is the Order Confirmation class related to the Order class? The Order Confirmation is related to both the Order and the Ordering classes. In the image, the Order Class is represented by a rectangle, while the Order Ordering Class is a square. The Ordering class is responsible for processing the order, while also handling the confirmation process.",
+            "What are the classes representing shopping carts in this system? In this system, the shopping carts are represented by classes."
+        ],
+        "ground_truth_answer": [
+            [
+                "Customer",
+                "Admin"
+            ],
+            "The relationship between 'Product' and 'Shopping Cart' is Aggregation, where a Shopping Cart can contain multiple Products.",
+            "The primary use cases represented are: 'View Product', 'Add to Cart', 'Place Order', and 'Receive Order Confirmation'.",
+            "The 'Order Confirmation' class is related to the 'Order' class via association, indicating that an order can result in a confirmation being sent to the customer.",
+            [
+                "Shopping Cart"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML15.png",
+        "questions": [
+            "What is the first message sent by the Customer to the System?",
+            "Which actor sends the 'Payment verified' message?",
+            "How many messages are exchanged between the Customer and the System before the order is placed?",
+            "What is the last message sent by the System to the Customer?",
+            "If the payment verification fails, what is the likely next step in the sequence?"
+        ],
+        "generated_answer_kosmos": [
+            "What is the first message sent by the Customer to the System? The first message that the Customer sends to the system is a purchase order.",
+            "Which actor sends the 'Payment verified' message? The 'Payments verified' notification is sent by the 'Customer'.",
+            "How many messages are exchanged between the Customer and the System before the order is placed? There are two messages exchanged between a Customer and a System before an order is made.",
+            "What is the last message sent by the System to the Customer? The last message that the System sends to the customer is \"Thank you for your order.\"",
+            "If the payment verification fails, what is the likely next step in the sequence? In the image, the sequence of events leading to the payment failure is depicted as a series of yellow blocks, each representing a possible outcome of the payment process. The likely next steps in the payment sequence are: 1. The customer may attempt to contact the payment system to request a refund or to make a payment. 2. The payment system may attempt a manual payment verification, which involves verifying the customer's account information and verifying the payment method. 3. The customer' s payment may be declined, resulting in a failed payment attempt. 4. The system may notify the customer about the payment rejection, which may result in a request for a refund, a request to make the payment, or a request that the customer contact the customer service team to resolve the issue. 5. The process may continue until the payment is successfully processed, either by the customer or the payment service provider."
+        ],
+        "ground_truth_answer": [
+            "Add item to cart",
+            "Bank",
+            3,
+            "Notify order",
+            "Request payment details again"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML16.png",
+        "questions": [
+            "What is the initial activity in this process?",
+            "How many decision nodes are present in the diagram?",
+            "What is the final activity in the process?",
+            "What is the immediate successor of the 'Product Search' activity?",
+            "If a user decides to 'Remove Product(s) from Shopping Cart' what is the subsequent activity?"
+        ],
+        "generated_answer_kosmos": [
+            "What is the initial activity in this process? The initial activity of this process is to create a flowchart, which is a graphical representation of a process or workflow.",
+            "How many decision nodes are present in the diagram? There are six decision nodes present in this diagram.",
+            "What is the final activity in the process? The final activity is a decision, which is a choice made by the user.",
+            "What is the immediate successor of the 'Product Search' activity? The immediate successor to the 'product search' activity is 'Search'.",
+            "If a user decides to 'Remove Product(s) from Shopping Cart' what is the subsequent activity? The subsequent activity is to remove the product(s), which is represented by the yellow boxes in the flowchart."
+        ],
+        "ground_truth_answer": [
+            "Search Product",
+            3,
+            "Place Order",
+            "View Product",
+            "Update Shopping Cart"
+        ]
+    },
+    {
+        "image": "datasett/datasetUML17.png",
+        "questions": [
+            "Which classes represent insurance claim processing in this diagram?",
+            "How are the 'Person' and 'Address' classes related?",
+            "What attributes are defined in the 'Policy' class?",
+            "What intermediate class establishes a relationship between 'Customer File' and 'Assessment Report'?",
+            "What methods are defined in the 'Insurance Claim' class for linking claims to policies?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes represent insurance claim processing in this diagram? In this diagram, the classes represent the insurance claim process.",
+            "How are the 'Person' and 'Address' classes related? The 'Person",
+            "What attributes are defined in the 'Policy' class? The 'Polics' class is defined in a class diagram, which is a graphical representation of the class hierarchy.",
+            "What intermediate class establishes a relationship between 'Customer File' and 'Assessment Report'? The intermediate class 'Customers' establishes a connection between 'Assets' and the 'Custom Report'.",
+            "What methods are defined in the 'Insurance Claim' class for linking claims to policies? In the 'insurance claim' class, there are several methods defined for linking policies to claims. These methods include: 1. Claim Type: This method allows the user to specify the type of insurance claim they want to link to the policy. 2. Policy Type: The policy type can be either a single policy or multiple policies. 3. Policy Name: The name of the policy can be a unique name for the policy or a generic name for all policies in the system. 4. Policy Description: The description of the insurance policy can include the policy name, policy type, policy description, and any additional information. 5. Policy Status: The status of the policies can be 'active', 'pending', or 'cancelled'. 6. Policy Details: The details of the specific policy, such as the policy type and policy description. 7. Policy Details (optional): The details for the specific policies, such a policy type or policy description and any other information. 8. Policy Link: The link between the policy and the policy details."
+        ],
+        "ground_truth_answer": [
+            [
+                "Customer File",
+                "Policy",
+                "Assessment Report",
+                "Insurance Claim"
+            ],
+            "The 'Person' and 'Address' classes are related through Aggregation, indicating that each Person may have one or more associated Addresses.",
+            "The 'Policy' class defines attributes such as policy_number (unique identifier), policy_holder_name (the holder's name), and policy_conditions (details about the policy's terms).",
+            "The 'Insurance Claim' class acts as the intermediate class linking 'Customer File' and 'Assessment Report'.",
+            [
+                "addClaim",
+                "updateClaim",
+                "deleteClaim"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML18.png",
+        "questions": [
+            "Which private classes are present in this diagram?",
+            "How are the public classes related to one another?",
+            "What happens if the 'Account' class is private, and how does it affect the 'Contacts' and 'Activities' classes?",
+            "What are the implications of making the 'Opportunity' class private?",
+            "How does encapsulation improve the security of this system through the use of private classes?"
+        ],
+        "generated_answer_kosmos": [
+            "Which private classes are present in this diagram? The diagram shows a private class named \"Opportunity\" that is present in the class diagram.",
+            "How are the public classes related to one another? The public classes are related to each other by their relationships to the database schema.",
+            "What happens if the 'Account' class is private, and how does it affect the 'Contacts' and 'Activities' classes? If the 'account' class has been private, then the 'contacts' class will not be affected by the change. However, if the private 'accounts' or 'contact' class were to be public, then these classes would be affected. The 'contact activities' class would be impacted by the new private 'contact accounts' or private 'private contacts' class.",
+            "What are the implications of making the 'Opportunity' class private? Making the 'opportunity class' private can have several implications. Firstly, it can make it more difficult for the developer to access the data stored in the'success' or 'failure' columns. This can lead to inconsistencies in the data, which could affect the overall performance of the application. Secondly, it may make it difficult for other classes to access or modify the data in the Opportunity class. This could lead to a loss of functionality or data integrity. Lastly, it could also lead to the creation of a new class, which may not be compatible with other classes or data structures.",
+            "How does encapsulation improve the security of this system through the use of private classes? Encapsulating private classes in the system allows for better security by providing a separation between the data and the code. This separation allows for the code to be more secure, as it is not exposed to the outside world. Encapsuled classes also provide a more controlled environment for the data, as they are not exposed directly to the user. This can help prevent accidental changes or modifications to the data. Additionally, encapsuling private classes can help reduce the number of vulnerabilities in the code, as the code is not directly exposed to external users. This is particularly important in systems that are highly dependent on external users, such as databases or web applications."
+        ],
+        "ground_truth_answer": [
+            [
+                "Account",
+                "Contacts",
+                "Activities"
+            ],
+            "The public classes are related to one another via associations and aggregations, allowing interaction between entities such as Leads, Contacts, and Opportunities.",
+            "If the 'Account' class is private, external classes like 'Contacts' and 'Activities' will not have direct access to its data, which limits exposure of sensitive information.",
+            "Making the 'Opportunity' class private restricts its access to internal components only, ensuring that only authorized entities can modify or view opportunity-related data.",
+            "Encapsulation improves the security by restricting access to sensitive data and internal states through the use of private classes, limiting unauthorized access or modifications."
+        ]
+    },
+    {
+        "image": "datasett/datasetUML19.png",
+        "questions": [
+            "Which classes are public in this diagram?",
+            "How is the 'Librarian' class related to the 'User' and 'Transaction' classes?",
+            "What attributes are present in the 'Books' class?",
+            "What happens if the 'Books' class is private?",
+            "What methods are defined for managing the connection between 'User' and 'Transaction' classes?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes are public in this diagram? The classes in this",
+            "How is the 'Librarian' class related to the 'User' and 'Transaction' classes? The 'Librarian' class is related to both the 'user' and the 'transaction' class. The 'User,' 'Librarian,' and `Books' classes are related to each other through the 'borrowing' and/or'reading' methods. The borrowing method is used to obtain a reference to a specific item in the database, while the'reading method' is used for reading the item's data. The relationship between the 'librarian,' the'student,' or the 'library' class and the other classes is illustrated in the following diagram:",
+            "What attributes are present in the 'Books' class? The 'Book' class contains the following attributes: 'User', 'Book ID', and 'Book Title'.",
+            "What happens if the 'Books' class is private? If the 'books' class has a private field, the user will not be able to access the data stored in that field.",
+            "What methods are defined for managing the connection between 'User' and 'Transaction' classes? In the image, the 'Users' and the 'Books' classes are connected to each other using the 'Library' class. The 'User:' and `Books:' methods are also defined for the 'Transfer' class, which is connected to the 'Student' class using the `User:` and `Transaction:` methods."
+        ],
+        "ground_truth_answer": [
+            [
+                "User",
+                "Transaction",
+                "Books",
+                "Librarian"
+            ],
+            "The 'Librarian' class is related to the 'User' and 'Transaction' classes via association, enabling the librarian to manage user transactions like issuing and returning books.",
+            "The 'Books' class includes attributes like book_id (unique identifier), title (name of the book), author (name of the author), and publisher (the entity publishing the book).",
+            "If the 'Books' class is private, external access is restricted, and other classes will not be able to interact directly with the book data.",
+            [
+                "addTransaction",
+                "updateTransaction",
+                "deleteTransaction"
+            ]
+        ]
+    },
+    {
+        "image": "datasett/datasetUML20.png",
+        "questions": [
+            "Which classes represent network components in this system?",
+            "How is the 'TrafficStream' entity connected to the 'Node' entity?",
+            "What attributes are defined in the 'Links' entity?",
+            "What intermediate class establishes an indirect relationship between 'Network' and 'Links'?",
+            "What methods are available in the 'TrafficStream' class for managing connections to 'Node'?"
+        ],
+        "generated_answer_kosmos": [
+            "Which classes represent network components in this system? In this system, the network components include the Internet, LAN, and WAN.",
+            "How is the 'TrafficStream' entity connected to the 'Node' entity? The 'Trafficstream' entity is connected to 'Nodes' through a 'Nodule'.",
+            "What attributes are defined in the 'Links' entity? The 'Link' entity in the diagram defines the following attributes: 'Link ID', 'Link Type', and 'Link Status'.",
+            "What intermediate class establishes an indirect relationship between 'Network' and 'Links'? An intermediate class, which is not explicitly defined in the diagram, establishes an implicit relationship between the 'Networks' and the 'Link' classes. This relationship is called an indirect or implicit relationship.",
+            "What methods are available in the 'TrafficStream' class for managing connections to 'Node'? In the 'Nodes' class, there are several methods available for managing connection to 'Traffic'. These methods include: 1. 'NoDevice': This method is used to manage the connection to the 'DataSource' node. 2. 'NoDataSourceConnection': The 'No DataSourceConnections' method is designed to manage connections to the data source nodes. 3. 'DataStream': 'Data Stream' is a method that is used for managing the connection between the 'TransportStream' and the 'NetworkStream' nodes. 4. 'TransferStream', 'TransactionStream' or 'TransmissionStream' methods: These methods are designed to handle the transfer of data between the data sources and the data consumers. 5. 'Receiver': A method that manages the connection from the 'ResourceStream' to the receiver. 6. 'ConnectionManager': An object that manages connections between the nodes."
+        ],
+        "ground_truth_answer": [
+            [
+                "Network",
+                "Node",
+                "Links",
+                "TrafficStream"
+            ],
+            "The 'TrafficStream' entity is connected to the 'Node' entity via an association, allowing the management and flow of traffic between nodes.",
+            "The 'Links' entity defines attributes such as name (unique identifier), origin (starting node), destination (ending node), capacity (bandwidth or throughput), and unavailability (measure of reliability).",
+            "The 'Node' class serves as the intermediate entity that connects 'Network' and 'Links' indirectly.",
+            [
+                "addConnection",
+                "updateConnection",
+                "deleteConnection"
+            ]
+        ]
+    }
+]
