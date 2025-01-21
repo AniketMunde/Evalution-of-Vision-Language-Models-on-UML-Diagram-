@@ -151,9 +151,27 @@ The evaluation uses a customized Chain-of-Thought (CoT) prompting mechanism guid
   - Semantic similarity
   - Execution time
 ### ** Result Images** 
-For Qwen2vl
+**Single Image:**
+Qwen2-vl-
+![finaloutput](https://github.com/user-attachments/assets/1bdf4070-d5cf-4b37-8d39-b8a97b23553d)
+
+Llava-1.6-
+![finaloutput](https://github.com/user-attachments/assets/9b3ccb56-f2eb-4706-86b7-fb105b494b13)
+
+Kosmos-2
+![finaloutput](https://github.com/user-attachments/assets/9ae952dc-83b8-45ef-aa02-4b64aa745541)
+
+
+
+
+**Dataset-**
+Kosmos-2 Results-
 ![KOSMOSRESULT](https://github.com/user-attachments/assets/58f740e7-8379-47ed-91f7-a667bd44c0ef)
+
+LLava-1.6 Results-
 ![LLAVARESULT (1)](https://github.com/user-attachments/assets/99c2b61e-fc6b-4ed1-ae57-0e207f5e90d4)
+
+Qwen2-VL Results-
 ![QWEN2VL (1)](https://github.com/user-attachments/assets/b76d9f17-0417-445f-ad63-0f90cbc8e58b)
 
 
