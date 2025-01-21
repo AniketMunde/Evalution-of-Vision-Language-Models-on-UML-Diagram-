@@ -152,6 +152,7 @@ The evaluation uses a customized Chain-of-Thought (CoT) prompting mechanism guid
   - Execution time
 ### ** Result Images** 
 **Single Image:**
+
 Qwen2-vl-
 ![finaloutput](https://github.com/user-attachments/assets/1bdf4070-d5cf-4b37-8d39-b8a97b23553d)
 
@@ -163,8 +164,8 @@ Kosmos-2
 
 
 
-
 **Dataset-**
+
 Kosmos-2 Results-
 ![KOSMOSRESULT](https://github.com/user-attachments/assets/58f740e7-8379-47ed-91f7-a667bd44c0ef)
 
